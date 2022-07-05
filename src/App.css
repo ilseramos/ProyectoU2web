@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 10px;
+    font-family:sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+    width: 40%;
+    margin: auto;
+    padding-top: 0px;
+    display: flex;
+}
+.left-content,.right-content{
+    flex-basis: 50%;
+}
+.card{
+    padding-top: 0px;
+    background-color:#83992115;
+    border-radius: 1rem;
+    box-shadow: 0px 5px 5px rgba(50, 136, 57, 0.5);
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.right-content{
+    width: 30%;
+    text-align: center;
+    color: black;
+    position: fixed;
+    top:100px;
+    right: 190px;
+}
+.right-content img{
+    margin: 2rem;
+    height: 160px;
+}
+.right-content h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.abilities{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.abilities .group{
+    background-color: #ca7b7b;
+    color: rgb(22, 21, 21);
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+    margin-left: 1rem;
+}
+.base-stat{
+    margin-top: 3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#btn-group button{
+    width: 100px;
+    padding: 0.3rem 0;
+    margin: 0.5rem;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgba(20, 20, 20, 0.911);
+    background-color: #4745b7;
+    border-radius: 8px;
+}
+.img{
+    justify-content: center;
+    text-align: center;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+  margin-right: auto;
+    border: 1px solid #ccc;
+  padding: 1rem;
+    
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .pokemon{
+    margin: 0px 170px;
   }
-  to {
-    transform: rotate(360deg);
+  .tarjetaPoke{
+    margin: auto;
+    width: 70%;
+    height: 240px;
+    font-size: xx-large;
   }
-}
+  .imagen{
+    height: 200px;
+  }
